@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <!-- Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- header section starts -->
+    <header>
+      <a href="#" class="logo">Crochet</a>
+
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#patterns">Patterns</a>
+        <a href="#shopping">Shopping</a>
+        <a href="#about">about</a>
+        <a href="#review">review</a>
+      </nav>
+
+      <div class="icons">
+        <i class="fas fa-bars" id="menu-bars"></i>
+        <i class="fas fa-search" id="search-icon"></i>
+        <a class="fas fa-heart" href="#"></a>
+        <a href="shopping_cart.html" class="fas fa-shopping-cart"></a>
+      </div>
+    </header>
+    <!-- header section ends -->
+    <!-- Payment section starts -->
+    <div class="payment-container">
+      <form action="">
+        <div class="row">
+          <div class="col">
+            <h3 class="title">Billing Address</h3>
+            <div class="inputBox">
+              <span>full name :</span>
+              <input type="text" placeholder="John Deo" />
+            </div>
+            <div class="inputBox">
+              <span>emial :</span>
+              <input type="email" placeholder="example@example.com" />
+            </div>
+            <div class="inputBox">
+              <span>City :</span>
+              <input type="text" placeholder="Cairo" />
+            </div>
+            <div class="inputBox">
+              <span>address :</span>
+              <input type="text" placeholder="city - locality " />
+            </div>
+            <div class="flex">
+              <div class="inputBox">
+                <span>state :</span>
+                <input type="text" placeholder="Egypt" />
+              </div>
+              <div class="inputBox">
+                <span>zip code :</span>
+                <input type="text" placeholder="123 456" />
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <h3 class="title">Payment</h3>
+            <div class="inputBox">
+              <span>cards accepted :</span>
+              <img src="imgs/card_img.png" />
+            </div>
+            <div class="inputBox">
+              <span>name on card :</span>
+              <input type="text" placeholder="mr. John Deo" />
+            </div>
+
+            <div class="inputBox">
+              <span>credit card number :</span>
+              <input type="number" placeholder="1111-2222-3333-4444" />
+            </div>
+
+            <div class="inputBox">
+              <span>exp month :</span>
+              <input type="text" placeholder="January" />
+            </div>
+            <div class="flex">
+              <div class="inputBox">
+                <span>exp year :</span>
+                <input type="number" placeholder="2022" />
+              </div>
+              <div class="inputBox">
+                <span>CVV :</span>
+                <input type="text" placeholder="1234" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <input type="submit" value="proceed to checkout" class="btn" />
+      </form>
+    </div>
+    <!-- Payment section ends -->
+    <script src="main.js"></script>
+  </body>
+</html>
